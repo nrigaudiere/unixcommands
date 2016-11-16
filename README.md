@@ -10,3 +10,8 @@ Open all jpg files in the current subfolders
 ```bash
 find . -name "*.jpg" | xargs open
 ```
+
+Flush OSx DNS
+```bash
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flushed 
+```
