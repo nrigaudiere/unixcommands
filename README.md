@@ -20,3 +20,8 @@ Flush OSx DNS
 ```bash
 sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flushed 
 ```
+
+Download IE VMs
+```bash
+curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | env IEVMS_VERSIONS="7 9 EDGE" bash
+```
