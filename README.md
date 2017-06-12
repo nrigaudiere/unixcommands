@@ -25,3 +25,8 @@ Download IE VMs
 ```bash
 curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | env IEVMS_VERSIONS="7 9 EDGE" bash
 ```
+
+List npm packages version and avoid errors
+```bash
+npm ls --depth=0 "$@" 2>/dev/null
+```
